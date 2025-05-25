@@ -4,27 +4,27 @@ src/project
 
 커피 주문 키오스크 시스템 모듈 평가
 1. 응집도(Cohesion) 평가
- -1.1 기능적 응집도(Functional Cohesion)
+1.1 기능적 응집도(Functional Cohesion)
 Customer 클래스: 고객의 행동에 관련된 메서드만 포함하고 있어 높은 기능적 응집도를 보임
 Kiosk 클래스: 키오스크의 UI 표시와 사용자 입력 처리, 주문 처리 등 다양한 책임을 갖고 있어 중간 수준의 응집도
 OrderSystem 클래스: 주문 관리에 집중된 높은 응집도
 PaymentGateway 클래스: 결제 처리에만 집중된 높은 응집도
 BaristaApp 클래스: 음료 제조 관리에 집중된 높은 응집도
 OrderDetail 클래스: 주문 정보 저장에 집중된 높은 응집도
- -1.2 순차적 응집도(Sequential Cohesion)
+1.2 순차적 응집도(Sequential Cohesion)
 전반적인 시스템 흐름이 시퀀스 다이어그램의 흐름과 일치하며, 각 단계가 순차적으로 잘 연결되어 있음
 특히 CoffeeKioskSystem 클래스의 main 메서드는 전체 시스템의 작동 순서를 명확하게 보여줌
- -1.3 정보적 응집도(Informational Cohesion)
+1.3 정보적 응집도(Informational Cohesion)
 OrderDetail 클래스: 주문 정보에 대한 데이터를 캡슐화하여 높은 정보적 응집도를 가짐
 
 2. 결합도(Coupling) 평가
- -2.1 자료 결합도(Data Coupling)
+2.1 자료 결합도(Data Coupling)
 클래스 간 상호작용이 주로 메서드 매개변수를 통해 이루어져 낮은 결합도 유지
 Customer와 Kiosk 사이의 상호작용은 메서드 호출과 매개변수를 통해서만 이루어짐
- -2.2 스탬프 결합도(Stamp Coupling)
+2.2 스탬프 결합도(Stamp Coupling)
 OrderDetail 객체가 여러 클래스 간에 전달되므로 스탬프 결합도가 존재함
 (OrderDetail은 불변 객체로 설계되어 부작용 위험이 낮음)
- -2.3 제어 결합도(Control Coupling)
+2.3 제어 결합도(Control Coupling)
 Kiosk의 handlePaymentResult 메서드는 결제 결과에 따라 다른 동작을 수행하므로 제어 결합도가 존재
 이는 시스템의 특성상 필요한 부분이며, 조건부 로직이 명확하게 구현되어 있음
 외부 결합도(External Coupling)
