@@ -48,4 +48,4 @@ Kiosk의 handlePaymentResult 메서드는 결제 결과에 따라 다른 동작�
 - 음료 제조 상태 관리 및 알림
 
 
-
+https://github.com/PARKJAEKYUNG0525/Software-engineering/issues/1#issue-3089263525
