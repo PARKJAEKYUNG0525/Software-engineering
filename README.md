@@ -49,3 +49,7 @@ Kiosk의 handlePaymentResult 메서드는 결제 결과에 따라 다른 동작�
 
 
 ![Image](https://github.com/user-attachments/assets/f663497c-5157-4d52-a52f-6dc7c88378dd)
+
+
+결과값
+![Image](https://github.com/user-attachments/assets/7c6aee41-651e-4a70-80de-7c5094bd8084)
